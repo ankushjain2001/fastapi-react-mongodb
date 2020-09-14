@@ -10,7 +10,7 @@ This template project provides the following:
 
 ## Screenshots
 #### Landing Page
-[![Landing Page](https://user-images.githubusercontent.com/10784445/93058018-6a472080-f634-11ea-8991-b11725621a06.png)]
+![Landing Page](https://user-images.githubusercontent.com/10784445/93058018-6a472080-f634-11ea-8991-b11725621a06.png)
 
 #### Home Page
 ![Home Page](https://user-images.githubusercontent.com/10784445/93058005-65826c80-f634-11ea-8d50-c325dba0f273.png)
@@ -65,7 +65,7 @@ npm install
 
 ## Run Instructions
 #### A. MongoDB Database
-1. Navigate to the root directory (where the three directories backend, database and frontend are present)
+1. Navigate to the root directory (where the three directories backend, database and frontend are present) or start your existing MongoDB server
 2. Start MongoDB server
 ```bash
 mongod --dbpath=database
