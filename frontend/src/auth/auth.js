@@ -37,18 +37,14 @@ class Auth {
     }
   // Successful login handling
   if ('access_token' in data) {
-    // Comment the below lines in PROD
     // eslint-disable-next-line
     const decodedToken = decodeJwt(data['access_token']);
     // console.log(decodedToken)
     localStorage.setItem('token', data['access_token']);
     localStorage.setItem('permissions', 'user');
   }
-    // console.log(data)
     return data
   };
-
-
 
   register = async (firstName, lastName, email, password, passwordConfirmation) => {
     // Assert firstName, lastName and phone not empty
@@ -109,20 +105,15 @@ class Auth {
       localStorage.setItem('token', data['access_token']);
       localStorage.setItem('permissions', 'user');
     }
-    // console.log(data)
     return data;
   };
-
-
 
   logout = (callback) => {
     localStorage.removeItem('token');
     localStorage.removeItem('permissions');
     // Using a callback to load '/' when logout is called
     callback();
-    // console.log('Logout Called')
   };
-
 
   getUser = async () => {
     const token = localStorage.getItem('token');
@@ -134,11 +125,8 @@ class Auth {
     // Fetch request
     const response = await fetch(request);
     const data = await response.json();
-    // console.log(data)
     return data
-
-  }
-
+  };
 
   isAuthenticated = () => {
     const permissions = localStorage.getItem('permissions');

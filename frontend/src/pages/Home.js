@@ -16,16 +16,16 @@ export const Home = (props) => {
     "is_superuser": false,
     "firstName": "",
     "lastName": ""
-  })
+  });
 
   // Fetch user information on page load
   useEffect(() => {
     const fetchData = async () => {
       if (auth.isAuthenticated()){
-        const result = await auth.getUser()
+        const result = await auth.getUser();
         setUser(result);
       };
-    }
+    };
     fetchData();
   // eslint-disable-next-line
   }, []);
@@ -33,9 +33,9 @@ export const Home = (props) => {
   // Function to call logout
   const callLogout = async () => {
     auth.logout(() => {
-      history.push('/')
+      history.push('/');
     });
-  }
+  };
   
   return (
     <>
@@ -48,13 +48,13 @@ export const Home = (props) => {
               width="40"
               height="40"
               className="d-inline-block align-top"
-            />{' '}
+            />
             <Navbar.Brand><strong>Project</strong></Navbar.Brand>
           </Navbar.Brand>
         </div>
         <div>
           <label className="ml-4 text-white" style={{}}><FaUserCircle size={21}/></label>
-          <label className="ml-4 text-white">{user.firstName+" " +user.lastName}</label>
+          <label className="ml-4 text-white">{user.firstName+" "+user.lastName}</label>
           <Button className="ml-4" variant="outline-light" onClick={callLogout}>Log Out</Button>
         </div>
       </Navbar>
@@ -67,5 +67,5 @@ export const Home = (props) => {
         </Row>
       </Container>
     </>
-  )
-}
+  );
+};

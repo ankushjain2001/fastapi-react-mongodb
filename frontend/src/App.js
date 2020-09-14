@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Home } from './pages/Home';
-import { ProtectedRoute } from './auth/ProtectedRoute';
+import { ProtectedRoute } from './auth/protected-route';
 import './App.css';
 
 function App() {
@@ -25,5 +25,5 @@ function App() {
        </div>
     </BrowserRouter>
   );
-}
+};
 export default App;

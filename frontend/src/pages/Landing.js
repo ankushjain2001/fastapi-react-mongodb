@@ -1,9 +1,9 @@
 import React from 'react';
 import { Navbar, Container, Row, Col, Alert } from 'react-bootstrap';
-import { Login } from '../auth/components/login';
-import { Register } from '../auth/components/register';
+import { Login } from '../auth/login';
+import { Register } from '../auth/register';
 
-export const AppLanding = (props) => {
+export const Landing = (props) => {
   return (
     <>
       <Navbar bg="dark" variant="dark">
@@ -14,11 +14,10 @@ export const AppLanding = (props) => {
             width="40"
             height="40"
             className="d-inline-block align-top"
-          />{' '}
+          />
           <Navbar.Brand><strong>Project</strong></Navbar.Brand>
         </Navbar.Brand>
       </Navbar>
-
       <Container className="mt-4">
         <Row>
           <Col className="mt-4">
@@ -35,8 +34,6 @@ export const AppLanding = (props) => {
           </Col>
         </Row>
       </Container>
-
-
     </>
-  )
-}
+  );
+};

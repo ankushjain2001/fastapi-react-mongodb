@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router';
 import { Form, Button, Alert } from 'react-bootstrap';
-import auth from '../auth'
+import auth from './auth';
 
 export const Login = () => {
   // History hook
@@ -23,14 +23,12 @@ export const Login = () => {
       // Callbacks can be added here
       if (data) {
         history.push('/');
-        // console.log(data)
       }
     } 
     catch (err) {
       if (err instanceof Error) {
         // Handle errors thrown from frontend
         setError(err.message);
-        // console.log(err.message)
       } 
       else {
         // Handle errors thrown from backend
@@ -38,8 +36,7 @@ export const Login = () => {
           setError('Incorrect credentials');
         }
         else {
-          setError('Error occured in the API. Report to Admin.')
-          // console.log(err)
+          setError('Error occured in the API.');
         }
       }
     }
@@ -65,5 +62,5 @@ export const Login = () => {
         </Button>
       </Form>
     </>
-  )
-}
+  );
+};

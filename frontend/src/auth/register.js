@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router';
 import { Form, Button, Alert } from 'react-bootstrap';
-import auth from '../auth';
+import auth from './auth';
 
 export const Register = () => {
   // History hook
@@ -26,16 +26,14 @@ export const Register = () => {
       // Callbacks can be added here
       if (data) {
         await auth.login(email, password);
-        alert('Registeration Successful!')
+        alert('Registration Successful!');
         history.push('/');
-        // console.log(data);
       }
     }
     catch (err) {
       if (err instanceof Error) {
         // Handle errors thrown from frontend
         setError(err.message);
-        // console.log(err.message);
       } 
       else {
         // Handle errors thrown from backend
@@ -43,14 +41,12 @@ export const Register = () => {
           setError('Email ID is already registered. Please use your credentials to login.');
         }
         else {
-          setError(err)
-          // console.log(err)
+          setError('Error occured in the API.');
         }
       }
     }
   };
 
-  // View
   return (
     <>
       <h2>Register</h2>
@@ -83,5 +79,5 @@ export const Register = () => {
         </Button>
       </Form>
     </>
-  )
-}
+  );
+};
