@@ -1,4 +1,5 @@
 fastapi==0.61.1
 fastapi-users==3.0.5
-mongomotor==0.15.0
 uvicorn==0.11.8
+motor==2.2.0
+
