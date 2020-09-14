@@ -1,16 +1,21 @@
 # FastAPI-React-MongoDB
-A minimal boilerplate / template project to get you started with a FastAPI backend, React frontend, MongoDB, and JWT or session cookie user authentication (via FastAPIUsers).
+A minimal boilerplate / template project to get you started with a Python FastAPI backend, React frontend, MongoDB, and JWT user authentication (via FastAPIUsers).
 
+This template project provides the following:
+- React frontend with the commonly used styling framework React-Bootstrap and icons library React-Icons
+- Authentication system for FastAPI using JWT tokens as offered by FastAPIUsers project
+- Examples for creating protected routes and regular routes using FastAPIUsers at backend and React-Router at frontend
+- Examples for creating MongoDB collection schemas (using Pydantic) and adding more attributes to "users" collection
 <hr>
 
-## Features
-- **[FastAPI](https://github.com/tiangolo/fastapi)** 
-- **[FastAPIUsers](https://github.com/frankie567/fastapi-users)** 
-- **[React](https://reactjs.org/)**
-- **[React-Bootstrap](https://github.com/react-bootstrap/react-bootstrap)**
-- **[React-Icons](https://github.com/react-icons/react-icons)**
-- **[MongoDB](https://github.com/mongodb/mongo)**
-- **[Motor](https://github.com/mongodb/motor)**
+## Dependencies
+- **[FastAPI](https://github.com/tiangolo/fastapi)** (backend server)
+- **[FastAPIUsers](https://github.com/frankie567/fastapi-users)** (authentication system)
+- **[React](https://reactjs.org/)** (frontend library)
+- **[React-Bootstrap](https://github.com/react-bootstrap/react-bootstrap)** (frontend styling library)
+- **[React-Icons](https://github.com/react-icons/react-icons)** (frontend styling library)
+- **[MongoDB](https://github.com/mongodb/mongo)** (database server)
+- **[Motor](https://github.com/mongodb/motor)** (async MongoDB connector for Python)
 
 <hr>
 
@@ -22,7 +27,7 @@ A minimal boilerplate / template project to get you started with a FastAPI backe
 1. Install [Anaconda](https://docs.anaconda.com/anaconda/install/)
 2. Create an anaconda virtual environment (called "ProjectENV" or whatever you like) using the requirements.txt
 ```bash
-conda create -n ProjectENV python=3.7
+conda create -n ProjectENV python=3.8
 ```
 3. Activate the virtual environemnt
 ```bash
@@ -75,3 +80,9 @@ uvicorn main:app --reload
 npm start
 ```
 3. The React web application will be hosted at its default port 3000, goto [http://localhost:3000/](http://localhost:3000/)
+
+<hr>
+
+## Acknowledgement
+- React authorization component inspired by [Buuntu's](https://github.com/Buuntu) [fastapi-react](https://github.com/Buuntu/fastapi-react)
+- FastAPI authorization system by [franke567's](https://github.com/frankie567) [fastapi-users](https://github.com/frankie567/fastapi-users)
