@@ -31,33 +31,28 @@ class User(models.BaseUser):
     """
         Fields "id", "is_active" and "is_superuser" are created by this model
 
-        Uncomment/Modify the below lines to add more fields for the user
+        Modify the below lines to add more fields for the user
 
-        WARNING: You must also uncomment/Modify the same lines in the
+        WARNING: You must also modify the same lines in the
         UserCreate model below
     """
     
-    # firstName: str
-    # lastName: str
-    # phone: str
-    
-    pass
+    firstName: str
+    lastName: str
+
 
 class UserCreate(models.BaseUserCreate):
     """
         Fields "email" and "password" are created by this model
 
-        Uncomment/Modify the below lines to add more fields for the user
+        Modify the below lines to add more fields for the user
 
-        WARNING: You must also uncomment/Modify the same lines in the
+        WARNING: You must also modify the same lines in the
         User model above
     """
 
-    # firstName: str
-    # lastName: str
-    # phone: str
-
-    pass
+    firstName: str
+    lastName: str
 
 
 class UserUpdate(User, models.BaseUserUpdate):
@@ -78,7 +73,13 @@ class UserDB(User, models.BaseUserDB):
 
 # --- Authentication Method Setup ---------------------------------------------
 
-# Learn more at https://frankie567.github.io/fastapi-users/configuration/authentication/
+"""
+    Session duration/expiration can be changed through the lifetime_seconds
+    attribute
+
+    Learn more at https://frankie567.github.io/fastapi-users/configuration/authentication/
+
+"""
 
 # Secret Key (must be changed from "SECRET")
 SECRET = "SECRET"
