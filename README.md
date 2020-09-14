@@ -8,6 +8,16 @@ This template project provides the following:
 - Examples for creating MongoDB collection schemas (using Pydantic) and adding more attributes to "users" collection
 <hr>
 
+## Screenshots
+#### Landing Page
+[![Landing Page](https://user-images.githubusercontent.com/10784445/93058018-6a472080-f634-11ea-8991-b11725621a06.png)]
+
+#### Home Page
+![Home Page](https://user-images.githubusercontent.com/10784445/93058005-65826c80-f634-11ea-8d50-c325dba0f273.png)
+
+#### Swagger UI API Documentation
+![Swagger UI API Documentation](https://user-images.githubusercontent.com/10784445/93057970-569bba00-f634-11ea-9520-4a46d5c38427.png)
+
 ## Dependencies
 - **[FastAPI](https://github.com/tiangolo/fastapi)** (backend server)
 - **[FastAPIUsers](https://github.com/frankie567/fastapi-users)** (authentication system)
