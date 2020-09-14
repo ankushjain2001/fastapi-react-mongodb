@@ -8,17 +8,7 @@ This template project provides the following:
 - Examples for creating MongoDB collection schemas (using Pydantic) and adding more attributes to "users" collection
 <hr>
 
-## Screenshots
-#### Landing Page
-![Landing Page](https://user-images.githubusercontent.com/10784445/93058018-6a472080-f634-11ea-8991-b11725621a06.png)
-
-#### Home Page
-![Home Page](https://user-images.githubusercontent.com/10784445/93058005-65826c80-f634-11ea-8d50-c325dba0f273.png)
-
-#### Swagger UI API Documentation
-![Swagger UI API Documentation](https://user-images.githubusercontent.com/10784445/93057970-569bba00-f634-11ea-9520-4a46d5c38427.png)
-
-## Dependencies
+## Features
 - **[FastAPI](https://github.com/tiangolo/fastapi)** (backend server)
 - **[FastAPIUsers](https://github.com/frankie567/fastapi-users)** (authentication system)
 - **[React](https://reactjs.org/)** (frontend library)
@@ -26,6 +16,18 @@ This template project provides the following:
 - **[React-Icons](https://github.com/react-icons/react-icons)** (frontend styling library)
 - **[MongoDB](https://github.com/mongodb/mongo)** (database server)
 - **[Motor](https://github.com/mongodb/motor)** (async MongoDB connector for Python)
+
+<hr>
+
+## Screenshots
+#### Landing Page
+![Landing Page](https://user-images.githubusercontent.com/10784445/93062550-b301d800-f63a-11ea-99f6-d60911927245.png)
+
+#### Home Page
+![Home Page](https://user-images.githubusercontent.com/10784445/93062563-ba28e600-f63a-11ea-9119-5b711efa7cd8.png)
+
+#### Swagger UI API Documentation
+![Swagger UI API Documentation](https://user-images.githubusercontent.com/10784445/93062570-bd23d680-f63a-11ea-8d6a-2a2d121817a4.png)
 
 <hr>
 
@@ -94,5 +96,6 @@ npm start
 <hr>
 
 ## Acknowledgement
+- Idea inspired by [tiangolo's](https://github.com/tiangolo) [full-stack-fastapi-postgresql](https://github.com/tiangolo/full-stack-fastapi-postgresql)
 - React authorization component inspired by [Buuntu's](https://github.com/Buuntu) [fastapi-react](https://github.com/Buuntu/fastapi-react)
 - FastAPI authorization system by [franke567's](https://github.com/frankie567) [fastapi-users](https://github.com/frankie567/fastapi-users)
