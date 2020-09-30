@@ -8,6 +8,13 @@ This template project provides the following:
 - Examples for creating MongoDB collection schemas (using Pydantic) and adding more attributes to "users" collection
 <hr>
 
+## Acknowledgement
+- This idea is inspired by [tiangolo's](https://github.com/tiangolo) official FastAPI full stack project [full-stack-fastapi-postgresql](https://github.com/tiangolo/full-stack-fastapi-postgresql). Please head to the said repo for a Vue frontend and PostgreSQL database template project. It provides a comprehensive base project in the form of a cookiecutter template.
+- The React authorization component is inspired by [Buuntu's](https://github.com/Buuntu) project [fastapi-react](https://github.com/Buuntu/fastapi-react). Please head to the said repo for a React frontend and PostgreSQL database template project. It provides a comprehensive base project in the form of a cookiecutter template that handles authentication, reverse proxies, docker containers, testing, server-side validation, linting, etc.
+- The backend authentication is built using [franke567's](https://github.com/frankie567) [fastapi-users](https://github.com/frankie567/fastapi-users) python package for FastAPI. It provides easy out-of-the-box backend auth components.
+
+<hr>
+
 ## Features
 - **[FastAPI](https://github.com/tiangolo/fastapi)** (backend server)
 - **[FastAPIUsers](https://github.com/frankie567/fastapi-users)** (authentication system)
@@ -92,10 +99,3 @@ uvicorn main:app --reload
 npm start
 ```
 3. The React web application will be hosted at its default port 3000, goto [http://localhost:3000/](http://localhost:3000/)
-
-<hr>
-
-## Acknowledgement
-- Idea inspired by [tiangolo's](https://github.com/tiangolo) [full-stack-fastapi-postgresql](https://github.com/tiangolo/full-stack-fastapi-postgresql)
-- React authorization component inspired by [Buuntu's](https://github.com/Buuntu) [fastapi-react](https://github.com/Buuntu/fastapi-react)
-- FastAPI authorization system by [franke567's](https://github.com/frankie567) [fastapi-users](https://github.com/frankie567/fastapi-users)
